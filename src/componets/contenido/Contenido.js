@@ -32,23 +32,37 @@ class Contenido extends Component {
                             <div style={{ background: '#FFF', padding: '30px' }}>
                                 <center><h1>APP MX ASTURIAS</h1></center>
                                 <Row gutter={16}>
-                                    <Col span={8}>
+                                    <Col xs = {{span: 24}} md={{span: 8}} lg={{span: 8}}>
                                         <Card title="¿Nos conoces?" bordered={false}><MdLightbulbOutline size={20} />Somos Somo MXAsturias</Card>
                                     </Col>
-                                    <Col span={8}>
-                                        <Card title="Unete" bordered={false}><MdLocalHospital size={20} />¿Te interesa mejorar la calidad de vida de las personas?</Card>
+                                    <Col xs = {{span: 24}} md={{span: 8}} lg={{span: 8}}>
+                                        <Card title="Unete" bordered={false }><MdLocalHospital size={20} />¿Te interesa mejorar la calidad de vida de las personas?</Card>
                                     </Col>
-                                    <Col span={8}>
+                                    <Col xs = {{span: 24}} md={{span: 8}} lg= {{span: 8}}>
                                         <Card title="La mejor Opción" bordered={false}><MdLocalOffer size={20} />¿Quieres tranquilidad, salud y seguridad?</Card>
                                     </Col>
                                 </Row>
+
+                                <Row type="flex" justify="center">
+                                    <Col xs={24} md={6} lg={6}>
+                                        <h2 style={{ marginBottom: 20 }}>¿Te gusta nuestra App?</h2>
+                                    </Col  >
+                                    <Col xs={24} md={6} lg={6}> 
+                                        <Row type="flex" justify="center">
+                                            <Tag color="blue">¡Estamos construyendo un mundo mejor!</Tag> 
+                                        </Row>
+                                        <Row type="flex" justify="center">
+                                            <Tag color="#108ee9">¡Llámanos!
+                                            <MdLocalPhone size={20} /> 617363540 </Tag>
+                                        </Row>
+                                                                                                          
+                                    </Col>
+                                    
+                                </Row>
+
                                 <br/>
-                                <h2 style={{ marginBottom: 20 }}>¿Te gusta nuestra App?</h2>
-                                <Tag color="blue">¡Estamos construyendo un mundo mejor!</Tag>
-                                <br/>
-                                <br/>
-                                <Tag color="#108ee9">¡Llámanos!
-                                    <MdLocalPhone size={20} /> 617363540 </Tag>
+                                
+                                
                             </div>
 
 
