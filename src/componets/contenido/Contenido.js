@@ -15,6 +15,14 @@ import MdCloudDone from 'react-icons/lib/md/cloud-done';
 
 const { Header, Footer, Sider, Content } = Layout;
 
+const style={
+    header:{
+        display: "flex",
+        justifyContent: "space-around",
+        backgroundColor:'#004cac',
+        alignItems: "center"
+    }
+}
 
 class Contenido extends Component {
 
@@ -26,8 +34,13 @@ class Contenido extends Component {
                 <div>
 
                     <Layout>
-                        <Header style={{backgroundColor:'#004cac'}}><center><MdAdb size={30} color="aliceblue"/> <MdTabletMac size={27} color="aliceblue" /><MdCloudDone size={27} color="aliceblue" /><MdDesktopMac size={27} color="aliceblue" /></center></Header>
-                        <Content>
+                        <Header style={style.header}>                              
+                            <MdAdb size={30} color="aliceblue"/> 
+                            <MdTabletMac size={27} color="aliceblue" />
+                            <MdCloudDone size={27} color="aliceblue" />
+                            <MdDesktopMac size={27} color="aliceblue" />                      
+                        </Header>
+                        <Content style={{height: ""}}>
 
                             <div style={{ background: '#FFF', padding: '30px' }}>
                                 <center><h1>APP MX ASTURIAS</h1></center>
@@ -69,7 +82,6 @@ class Contenido extends Component {
                         </Content>
                         <Footer>
                             <a href="https://www.negociacionplanb.com" target="_blank"> <center><MdCopyright size={25} />2018 Todos los derechos reservados / <MdWeb size={25} />Web diseñada por <strong>PLAN B</strong></center></a>
-
                         </Footer>
                     </Layout>
                 </div>
