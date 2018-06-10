@@ -16,6 +16,7 @@ class HomePage extends Component {
                     <div><img src={woman}/></div>
                     <div><img src={plase}/></div>
                     <div><img src={wall}/></div>
+                    <div><img src={asturias}/></div>
                 </Carousel>
 
             </div>
