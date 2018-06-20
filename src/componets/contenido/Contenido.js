@@ -12,6 +12,8 @@ import MdCopyright from 'react-icons/lib/md/copyright';
 import MdWeb from 'react-icons/lib/md/web';
 import MdDesktopMac from 'react-icons/lib/md/desktop-mac';
 import MdCloudDone from 'react-icons/lib/md/cloud-done';
+import { Alert } from 'antd';
+import { Button, notification } from 'antd';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -46,10 +48,10 @@ class Contenido extends Component {
                                 <center><h1>APP MX ASTURIAS</h1></center>
                                 <Row gutter={16}>
                                     <Col xs = {{span: 24}} md={{span: 8}} lg={{span: 8}}>
-                                        <Card title="¿Nos conoces?" bordered={false}><MdLightbulbOutline size={20} />Somos Somo MXAsturias</Card>
+                                        <Card title="¿Nos conoces?" bordered={false}><MdLightbulbOutline size={20} />Somos MXAsturias</Card>
                                     </Col>
                                     <Col xs = {{span: 24}} md={{span: 8}} lg={{span: 8}}>
-                                        <Card title="Unete" bordered={false }><MdLocalHospital size={20} />¿Te interesa mejorar la calidad de vida de las personas?</Card>
+                                        <Card title="Únete" bordered={false }><MdLocalHospital size={20} />¿Te interesa mejorar la calidad de vida de las personas?</Card>
                                     </Col>
                                     <Col xs = {{span: 24}} md={{span: 8}} lg= {{span: 8}}>
                                         <Card title="La mejor Opción" bordered={false}><MdLocalOffer size={20} />¿Quieres tranquilidad, salud y seguridad?</Card>
@@ -77,11 +79,11 @@ class Contenido extends Component {
                                 
                                 
                             </div>
-
-
+                            <Alert message="Usamos cookies para proveerte del servicio y funciones propuestas en nuestra página web y para mejorar la experiencia de nuestros usuarios
+Debes prestar tu consentimiento para seguir navegando" type="info" closeText="Cerrar " /> <p align="right"><a href="https://www.aboutcookies.org/how-to-delete-cookies/" target="_blank">Leer más cómo eliminar cookies</a></p>
                         </Content>
                         <Footer>
-                            <a href="https://www.negociacionplanb.com" target="_blank"> <center><MdCopyright size={25} />2018 Todos los derechos reservados / <MdWeb size={25} />Web diseñada por <strong>PLAN B</strong></center></a>
+                            <a href="https://www.negociacionplanb.com" > <center><MdCopyright size={25} />2018 Todos los derechos reservados / <MdWeb size={25} />Web diseñada por <strong>PLAN B</strong></center></a>
                         </Footer>
                     </Layout>
                 </div>
